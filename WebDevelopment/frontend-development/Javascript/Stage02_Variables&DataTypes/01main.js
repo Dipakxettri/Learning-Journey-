@@ -6,3 +6,4 @@
 
 let a = 2;//a is a variable that stores 2
 console.log(a);//prints in console
+
