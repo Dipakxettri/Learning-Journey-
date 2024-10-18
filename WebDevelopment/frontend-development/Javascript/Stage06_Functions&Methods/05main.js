@@ -54,7 +54,6 @@ function wrongOperend(num1,o,num2){
 ""
 //Random probability 
 let probability = Math.floor(Math.random() * 100) + 1;
-console.log(probability);
 
 //user input
 //check probability 
