@@ -25,6 +25,7 @@ Text nodes can be included in childNodes. To avoid greeting text nodes, use only
 const childElements = parentElement.children; // Only HTML elements
 console.log('Children (Only Elements):', childElements);
 ```
+also can give a index like `children[index]`
 
 ## First and Last Child
 - **`element.firstChild`**:
