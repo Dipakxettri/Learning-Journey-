@@ -3,6 +3,8 @@
 ## Events
 Events in JavaScript are actions or occurrences, such as a user clicking a button, loading a webpage, or submitting a form. You can use event listeners to respond to these actions.
 
+Docs for JS Events : https://developer.mozilla.org/en-US/docs/Web/API/Event
+
 ### Common Event Types:
 - `click`: Triggered when an element is clicked.
 - `mouseover`: Triggered when the mouse hovers over an element.
