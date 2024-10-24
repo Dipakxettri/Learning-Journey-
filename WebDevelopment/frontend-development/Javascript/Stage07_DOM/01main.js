@@ -1,1 +1,0 @@
-let qq = document.body;//this is body node 
