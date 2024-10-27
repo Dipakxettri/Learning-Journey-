@@ -13,5 +13,3 @@ A rule consists of:
 1. **Inline**: Inside HTML tags (e.g., `<h1 style="color: blue;">`).
 2. **Internal**: Inside `<style>` in the `<head>` of HTML.
 3. **External**: In a separate `.css` file linked to HTML (recommended for large projects).
-
-## Common Selectors
