@@ -3,5 +3,5 @@ Documenting my journey through web development like FrontEnd, Backend And Databa
 
 ## Javascript:
 
-[DOM Guide](https://github.com/Dipakxettri/FullStackWebDev/blob/d9521a6940440315572b3c4c8c6f5aa8e63acfdb/WebDevelopment/frontend-development/Javascript/Stage07_DOM/00AIntro%26Reference.md)
+[DOM Guide](https://github.com/Dipakxettri/FullStackWebDev/blob/a0a026a5612280b923a461f8cde929d4e549c75b/WebDevelopment/frontend-development/Javascript/Stage07_DOM/DOMReference.md)
 
