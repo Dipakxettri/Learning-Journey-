@@ -12,7 +12,7 @@
   ```
 
 ## `closest` Method
-- **Syntax**: `element.closest("selector")``
+- **Syntax**: `element.closest("selector")`
 - **Description**: Starts from the given element and traverses up the DOM tree until it finds the closest ancestor (or itself) that matches the specified selector. Returns `null` if no matching ancestor is found.
 - **Example**:
 ```js
@@ -22,7 +22,7 @@ console.log(closestDiv); // Logs the closest <div> ancestor or itself
 ```
 
 ## `contains` Method
-- **Syntax**: `parentNode.contains(childNode)``
+- **Syntax**: `parentNode.contains(childNode)`
 - **Description**: Checks if a parentNode contains the specified childNode. Returns `true` if it does; otherwise, `false`.
 - **Example**:
 ```js
