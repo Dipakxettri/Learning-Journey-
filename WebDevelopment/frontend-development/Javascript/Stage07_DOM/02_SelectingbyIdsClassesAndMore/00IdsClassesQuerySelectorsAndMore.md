@@ -48,3 +48,14 @@ const element = document.querySelector(".className");
 ```js
 const elements = document.querySelectorAll("div.myClass");
 ```
+
+## Comparison Table of DOM Selection Methods
+
+| Method                    | Returns                  | Selects By             |
+|---------------------------|--------------------------|-------------------------|
+| `getElementById`          | Single Element           | ID                      |
+| `getElementsByClassName`  | HTMLCollection (live)    | Class Name              |
+| `getElementsByTagName`    | HTMLCollection (live)    | Tag Name                |
+| `getElementsByName`       | NodeList (static)        | Name Attribute          |
+| `querySelector`           | First Element            | CSS Selector            |
+| `querySelectorAll`        | NodeList (static)        | All Matching CSS Selector |
