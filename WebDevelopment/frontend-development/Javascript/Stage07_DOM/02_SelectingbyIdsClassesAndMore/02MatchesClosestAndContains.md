@@ -30,3 +30,11 @@ const parent = document.getElementById("parentElement");
 const child = document.getElementById("childElement");
 console.log(parent.contains(child)); // true if 'childElement' is inside 'parentElement'
 ```
+
+## Summary Table of `matches`, `closest`, and `contains` Methods
+
+| Method     | Purpose                                                | Return Type         |
+|------------|--------------------------------------------------------|---------------------|
+| `matches`  | Checks if an element matches a CSS selector            | `Boolean`           |
+| `closest`  | Finds the nearest ancestor that matches a CSS selector | Element or `null`   |
+| `contains` | Checks if a node contains another specified node       | `Boolean`           |
