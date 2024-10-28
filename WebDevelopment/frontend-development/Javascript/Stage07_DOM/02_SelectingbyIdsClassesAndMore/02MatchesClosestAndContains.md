@@ -9,7 +9,7 @@
   if (element.matches(".myClass")) {
     console.log("Element has the class 'myClass'");
   }
-```
+  ```
 
 ## `closest` Method
 - **Syntax**: element.closest("selector")
