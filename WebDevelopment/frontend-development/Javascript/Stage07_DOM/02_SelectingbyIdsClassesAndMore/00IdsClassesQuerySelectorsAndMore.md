@@ -6,7 +6,7 @@
 - **Example**:
   ```js
   const element = document.getElementById("myId");
-```
+  ```
 
 ## Selecting by Class
 - **Syntax**: `document.getElementsByClassName("className")`
