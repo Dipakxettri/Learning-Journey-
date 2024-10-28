@@ -59,3 +59,9 @@ const elements = document.querySelectorAll("div.myClass");
 | `getElementsByName`       | NodeList (static)        | Name Attribute          |
 | `querySelector`           | First Element            | CSS Selector            |
 | `querySelectorAll`        | NodeList (static)        | All Matching CSS Selector |
+
+### Note:
+
+HTMLCollection is live; updates automatically with DOM changes.
+
+NodeList from querySelectorAll is static; does not update automatically.
