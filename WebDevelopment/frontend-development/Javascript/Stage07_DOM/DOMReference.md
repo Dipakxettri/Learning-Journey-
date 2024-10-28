@@ -18,4 +18,4 @@
 - **Text Nodes**: Text inside elements is also a node in the DOM.
 
 ## Refrences:
-[Basic Methods](Javascript/Stage07_DOM/00BasicMethods/00BasicMeths.md)
+[Basic Methods](https://github.com/Dipakxettri/FullStackWebDev/blob/c56d4a9884681dfaa12d3e5a85d080a8d71ddfd0/WebDevelopment/frontend-development/Javascript/Stage07_DOM/00BasicMethods/00BasicMeths.md)
