@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice of Insertion Methods</title>
+</head>
+
+<body>
+  <div class="container">
+  </div>
+  
+  <script>
+    let div = document.createElement("div");
+    div.innerHTML = "This div is inserted by JavaScript";
+    div.setAttribute("class", "created");
+
+    // Select the .container element and prepend the new div
+    document.querySelector(".container").prepend(div);
+    
+    //div.remove()
+    
+    
+    //adding html content
+    let cont = document.querySelector(".container");
+    cont.insertAdjacentHTML("afterbegin","<h2>hello word</h2>")
+    
+    
+    //class list & class name
+    cont.classList
+    cont.className
+    
+    //add remove and toggle
+    cont.classList.add("deepak")
+    cont.classList.remove("deepak")
+    cont.classList.toggle("deepak")
+  </script>
+    
+</body>
+
+</html>
