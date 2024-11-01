@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> guess the number game </title>
+</head>
+
+<body>
+  
+  <input type="number" placeholder="Guess the number " id="input">
+  <button type="submit" id="button">submit</button>
+  <p id="result">result: </p>
+
+<script>
+  const input = document.getElementById("input");
+  const button = document.getElementById("button");
+  
+  const ans = Math.floor(Math.random() * 9) + 1;
+  const result = document.getElementById("result");
+
+
+button.addEventListener("click", ()=>{
+  if(input.value == ans){
+    result.textContent = "Result: you win";
+  }
+  else{
+    result.textContent = "Result: you lose";
+  }
+})
+</script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Guess the number game </title>
+</head>
+
+<body>
+  <button type="button" id="bgColor">Black</button><br><br>
+  <input type="number" id="input" placeholder="Enter your guess">
+  <button type="submit" id="button">submit</button>
+  <button type="submit" id="reset">reset</button>
+      <p id="attempts">Remaning attempts:4</p>
+  <p id="result">Result:</p>
+      <p id="score">Score:</p>
+
+<script>
+  const input = document.getElementById("input");
+const button = document.getElementById("button");
+const result = document.getElementById("result");
+const scoree = document.getElementById("score");
+const attemptsDisplay = document.getElementById("attempts");
+const reset = document.getElementById("reset");
+
+let ans = Math.floor(Math.random() * 9) + 1; // Random number between 1 and 9
+let count = 4; // Total attempts
+let score = 100; // Initial score
+
+button.addEventListener("click", ()=>{
+  
+  if(count>1){
+    
+    if((input.value == ans)){
+      button.disabled = true;
+      result.textContent = "Result: You win";
+      scoree.textContent = `Score: ${score}`;
+    }
+    else{
+      count --;
+      score = score-25;
+      result.textContent = "Result: Try again"
+      attemptsDisplay.textContent = `Remaning attempts: ${count}`;
+    }
+  }
+  else{
+    score = score-25;
+    
+    
+  if(count == 1){
+    result.textContent = "Game over";
+    scoree.textContent = `Score: ${score}`;
+    button.disabled = true;
+  }
+  }
+})
+
+reset.addEventListener("click",()=>{
+  button.disabled = false;
+  count = 4;
+  score = 100;
+  input.value = "";
+  result.textContent = `Result:`;
+  scoree.textContent = "Score: ";
+  attemptsDisplay.textContent = `Remaning attempts: ${count}`;
+  ans = Math.floor(Math.random() * 9) + 1; // Random number between 1 and 9
+})
+
+let bgColorr = document.getElementById("bgColor");
+bgColor.addEventListener("click",() =>{
+  if(bgColor.textContent == "black"){
+    document.body.style.backgroundColor = "black";
+    bgColorr.textContent = "white";
+    attemptsDisplay.style.color = "white";
+    result.style.color = "white";
+    scoree.style.color = "white";
+  }
+  else{
+    document.body.style.backgroundColor = "white";
+    bgColor.textContent = "black";
+  }
+  
+})
+</script>
+</body>
+
+</html>
