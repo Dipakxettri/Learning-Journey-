@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Sum of value with feilds </title>
+</head>
+
+<body>
+  <input type="number" id="input1" placeholder="enter 1st number">
+    <input type="number" id="input2" placeholder="enter 2nd number">
+    <button type="submit" id="addButton">+</button>
+    <p id="result">result: </p>
+
+ <script>
+   const input1 = document.getElementById("input1");
+   const input2 = document.getElementById("input2");
+   
+   addButton.onclick = ()=>{
+     const value1 = parseFloat(input1.value);
+     const value2 = parseFloat(input2.value);
+     
+     if(!isNaN(value1) && !isNaN(value2)){
+       const sum = value1 + value2;
+       result.textContent = `result: ${sum}`;
+     }
+     else{
+       result.textContent = "incorrect input";
+     }
+     
+     input1.value = " ";
+     input2.value = " ";
+   }
+ </script>
+</body>
+
+</html>
