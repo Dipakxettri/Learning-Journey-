@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> IQ Test </title>
+</head>
+
+<body>
+  <p id="number">Remember this number : </p>
+  <input type="number" id="input">
+  <button type="submit" id="button">Submit</button>
+  <button id="reset">reset</button>
+  <p id="result">Result:</p>
+
+
+<script>
+  let ans = document.getElementById("number");
+  const input = document.getElementById("input");
+  const button = document.getElementById("button");
+  const result = document.getElementById("result");
+  const reset = document.getElementById("reset");
+  
+  //generating 5 digit random numbers :
+  let randomNum;
+let anss;
+let randomNums = [];
+function generateAns(){
+for (let i = 0; i <= 4; i++) {
+  randomNum = Math.floor(Math.random() * 5) + 1; // Generates a random number between 1 and 5
+  randomNums[i] = randomNum;
+  // Join the array elements into a string without commas
+ // we can change the separator if needed (e.g., ', ')
+  anss = randomNums.join('');
+}
+}
+generateAns()
+
+
+
+// Set the text content of the ans element
+function removeAns(){
+  ans.textContent = anss;
+  setTimeout(() => {
+    ans.remove();
+}, 1000);
+}
+removeAns();
+
+  button.addEventListener("click",()=>{
+    if(input.value == ans.textContent){
+      result.textContent = "Result: congrats You win";
+      button.disabled = true;
+    }
+    else{
+      result.textContent = "Result: You Loose plz try again";
+      button.disabled = true;
+    }
+  })
+  
+  reset.addEventListener("click",()=>{
+    result.textContent = "Result:"
+    document.body.before(ans);
+    generateAns();
+    removeAns();
+    button.disabled = false;
+  })
+</script>
+</body>
+
+</html>
