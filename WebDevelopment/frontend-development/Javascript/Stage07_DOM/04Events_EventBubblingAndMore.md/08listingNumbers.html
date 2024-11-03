@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Listing Numbers </title>
+</head>
+
+<body>
+  <div class="container">
+     <input type="number" id="input" placeholder="Enter new number">
+  <button type="submit" id="b1">Add</button>
+  <button type="reset" id="b2"> Reset</button>
+  
+  </div>
+ 
+  <script>
+    const input = document.getElementById("input");
+    const button = document.getElementById("b1");
+    const reset = document.getElementById("b2");
+    
+    let para;
+    let elem 
+    button.addEventListener("click", ()=>{
+     para = document.createElement("p");
+      para.textContent = input.value;
+      para.setAttribute("class","numbers");
+      document.querySelector(".container").after(para)
+     elem = document.getElementsByClassName("numbers");
+    })
+    
+    reset.addEventListener("click", () => {
+      const elems = document.getElementsByClassName("numbers");
+      while (elems.length > 0) { // Remove all elements with class "numbers"
+        elems[0].remove();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

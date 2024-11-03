@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Sum of two numbers with a feild</title>
+</head>
+
+<body>
+  
+  <input type="number" id="number">
+  <input type="number" id="number2">
+  <button type="submit" id="button">+</button>
+  <p id="result">Result:</p>
+  
+  <script>
+    const number = document.getElementById("number");
+    const number2 = document.getElementById("number2");
+    const button = document.getElementById("button");
+    const result = document.getElementById("result");
+    
+  
+    button.addEventListener("click",()=>{
+      const value1 = parseFloat(number.value);
+    const value2 = parseFloat(number2.value);
+    
+      if(!isNaN(value1) && !isNaN(value2)){
+        const sum = value1 + value2;
+        result.textContent = `Result: ${sum}`;
+      }
+      else{
+        result.textContent = `Result: error`;
+      }
+    })
+  </script>
+
+</body>
+
+</html>
