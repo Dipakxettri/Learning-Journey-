@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Guess The number Game </title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  
+  <input type="number" placeholder="Guess number from '1 to 9'" id="input">
+  <button type="submit" id="ok">Ok</button>
+  <button type="reset" id="reset">Reset</button>
+  <p id="attempts">Attempts: </p>
+  <p id="result">Result:</p>
+  <p id="score">Score:</p>
+  
+  <script>
+    const input = document.getElementById("input");
+    const button1 = document.getElementById("ok");
+    const button2 = document.getElementById("reset");
+    const attempts = document.getElementById("attempts");
+    const result = document.getElementById("result");
+    const score = document.getElementById("score");
+    
+    let ans = Math.floor(Math.random() * 9) + 1;
+    let count = 4;
+    let scoree = 100;
+    
+    attempts.textContent = `Attempts: ${count}`;
+    button1.addEventListener("click",()=>{
+    if(input.value>0 && input.value<10){
+          if(input.value == ans){
+            result.textContent = "Result: You win🎉";
+            score.textContent = `Score: ${scoree}`;
+            attempts.textContent = ``;
+            button1.disabled = true;
+          }
+          else{
+            result.textContent = "Result: Try again";
+            scoree = scoree - 25;
+            count --;
+            attempts.textContent = `Remaning Attempts: ${count}`;
+          }
+          if(count == 0){
+            score.textContent = `Score: ${scoree}`;
+            result.textContent = "Game Over";
+            button1.disabled = true;
+          }
+        }
+        else{
+          result.textContent = "Result: plz guess between 1 to 9";
+          input.value = "  ";
+        }
+  
+    })
+    
+    button2.addEventListener("click", () =>{
+      count = 4;
+      scoree = 100;
+      ans = Math.floor(Math.random() * 9) + 1;
+      button1.disabled = false;
+      input.value = "  ";
+      attempts.textContent = `Attempts: 4`;
+      result.textContent = "Result:";
+      score.textContent = `Score:`;
+      
+    })
+    
+    
+  </script>
+
+</body>
+
+</html>
