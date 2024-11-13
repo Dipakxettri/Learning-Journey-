@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Validation</title>
+</head>
+
+<body>
+  
+  <input type="text" placeholder="enter something" class="text">
+  <button type="submit" class="button">Submit</button>
+  
+  <script>
+    
+    const text = document.querySelector(".text");
+    const button = document.querySelector(".button");
+    
+    button.addEventListener("click",()=>{
+      const value = text.value;
+      if(!isNaN(value)){
+        if(value.length>0){
+          alert("  Sucess");
+        }
+        else{
+          alert("Number should not be empity");
+        }
+      }
+      else{
+        alert("The input should be number ");
+      }
+      text.value = "";
+    })
+  </script>
+</body>
+
+</html>

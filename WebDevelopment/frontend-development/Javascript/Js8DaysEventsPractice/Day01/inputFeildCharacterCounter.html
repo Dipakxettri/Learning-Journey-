@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Input Feild characters counter </title>
+</head>
+
+<body>
+  
+  <input type="text" class="input">
+  <button type="submit" class="button">Submit</button>
+  
+  <script>
+    const input = document.querySelector("input");
+    const button = document.querySelector(".button")
+    button.addEventListener("click",()=>{
+      const value = input.value;
+      const lgth = value.length;
+      let count = lgth;
+      if(lgth<=0){
+        alert("shouldn't  be empity");
+      }
+      else{
+        alert("sucess, character count is " + count);
+      }
+    })
+  </script>
+</body>
+
+</html>

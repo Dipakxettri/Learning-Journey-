@@ -16,6 +16,7 @@
   <button type="submit" id="mult">×</button>
   <button type="submit" id="divide">÷</button>
   <button type="submit" id="equal" >=</button>
+  <p id="result">Result:</p>
   
   <script>
   const input1 = document.getElementById("input1");
@@ -25,6 +26,7 @@
   const multB = document.getElementById("mult");
     const divisionB = document.getElementById("divide");
     const equal = document.getElementById("equal");
+    const resultt = document.getElementById("result");
     
     let result = 0;
     
@@ -65,7 +67,7 @@
     
     equal.addEventListener("click",()=>{
       
-      console.log(result);
+      resultt.textContent = `Result: ${result}`
       input1.value = "  ";
       input2.value = "  ";
       
