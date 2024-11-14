@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Sum</title>
+</head>
+
+<body>
+  
+  <div>
+    <input type="number" class="input1">
+    <input type="number" class="input2">
+    <button type="submit" class="add">+</button>
+    <button type="submit" class="equal">=</button>
+    <p class="result">Result : </p>
+    <button type="reset" class="reset">Reset</button>
+    <script>
+      const input1 = document.querySelector(".input1");
+      const input2 = document.querySelector(".input2");
+      const addB = document.querySelector(".add");
+      const equalB = document.querySelector(".equal");
+      const result = document.querySelector(".result");
+      const resetB = document.querySelector(".reset");
+      
+      let resultV = 0;
+      addB.addEventListener("click", () => {
+        const value1 = parseFloat(input1.value) || 0;
+        const value2 = parseFloat(input2.value) || 0;
+        resultV = value1 + value2;
+      });
+      
+      equalB.addEventListener("click", () => {
+        result.textContent = `Result : ${resultV}`;
+      });
+      
+      resetB.addEventListener("click",()=>{
+        
+        input1.textContent = "";
+        input1.textContent = "";
+      })
+      
+    </script>
+  </div>
+
+</body>
+
+</html>
