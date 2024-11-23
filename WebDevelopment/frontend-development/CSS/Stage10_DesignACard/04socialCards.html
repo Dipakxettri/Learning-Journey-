@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Cards</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card{
+            height: 360px;
+            width: 240px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .card:hover{
+            background-color: red;
+            color: white;
+        }
+        .imageB img{
+            padding-left: 70px;
+            padding-top: 8px;
+            
+        }
+        .content{
+            text-align: center;
+            padding: 20px;
+        }
+        .content p{
+            padding-top: 20px;
+        }
+
+        .content button{
+            margin-top: 20px;
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            height: 20px;
+        }
+
+        @media screen and (max-width: 502px){
+            body{
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+
+        </style>
+
+        </head>
+        <body>
+        <div class="card">
+        <div class="imageB">
+            <img src="04faccebook.png" alt="" width="100px">
+        </div>
+        <div class="content">
+            <h2>Facebook</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae dolore eligendi qui excepturi pariatur, rem quidem </p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="imageB">
+            <img src="04faccebook.png" alt="" width="100px">
+        </div>
+        <div class="content">
+            <h2>Linkdin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae dolore eligendi qui excepturi pariatur, rem quidem </p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="imageB">
+            <img src="04faccebook.png" alt="" width="100px">
+        </div>
+        <div class="content">
+            <h2>GitHub</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae dolore eligendi qui excepturi pariatur, rem quidem </p>
+            <button>Read More</button>
+        </div>
+    </div>
+    
+</body>
+</html>

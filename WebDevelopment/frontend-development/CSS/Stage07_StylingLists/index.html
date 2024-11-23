@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists</title>
+
+    <style>
+       
+        .navBar{
+             
+        }
+
+        nav ul li{
+            /* removing markers */
+            list-style: none;
+
+            /* setting Style */
+            list-style:circle;
+            background-color: yellow;
+
+            /* by default the position of style set outside the items so to display it under the items or set bg color do use position porporties */
+            list-style-position: inside;
+
+            /* replacing style with image */
+            list-style-image: url("imageUrl");
+
+            /* emojy style */
+            list-style-type: "emojy";
+
+            /* shorthand */
+            list-style: disc inside;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navBar">
+           <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+           </ul> 
+        </nav>
+    </div>
+    
+</body>
+</html>

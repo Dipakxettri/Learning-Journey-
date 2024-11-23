@@ -30,11 +30,39 @@ div{
   height: 20px;
   width:20px;
 }
+/* 
+child selector */
+div > p{
+  background-color: brown;
+}
+
+/* descendant selector */
+div p{
+  background-color: blue;
+}
+
+/* universal selector */
+*{
+  text-decoration: none;
+}
+
+/* pseudo selector */
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  background-color: brown;
+}
+
   </style>
 </head>
 
 <body>
   <div>
+    <article>
+      <p>paragraph</p>
+    </article>
     
   </div>
   
@@ -44,6 +72,8 @@ div{
   <div id="id">
     
   </div>
+
+  <a href="">Google</a>
 
 </body>
 

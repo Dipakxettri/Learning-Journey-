@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <button type="button" id="bgColor">Black</button><br><br>
+  <button type="button" id="bgColor">black</button><br><br>
   <input type="number" id="input" placeholder="Enter your guess">
   <button type="submit" id="button">submit</button>
   <button type="submit" id="reset">reset</button>
@@ -28,15 +28,16 @@ let ans = Math.floor(Math.random() * 9) + 1; // Random number between 1 and 9
 let count = 4; // Total attempts
 let score = 100; // Initial score
 
+
 button.addEventListener("click", ()=>{
-  
+   
   if(count>1){
     
     if((input.value == ans)){
       button.disabled = true;
       result.textContent = "Result: You win";
       scoree.textContent = `Score: ${score}`;
-    }
+    }  
     else{
       count --;
       score = score-25;
@@ -73,6 +74,7 @@ bgColor.addEventListener("click",() =>{
     document.body.style.backgroundColor = "black";
     bgColorr.textContent = "white";
     attemptsDisplay.style.color = "white";
+  
     result.style.color = "white";
     scoree.style.color = "white";
   }

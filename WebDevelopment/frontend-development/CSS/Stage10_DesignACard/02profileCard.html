@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+
+        .card {
+            height: 80vh;
+            width: 24vw;
+            background-color: white;
+            opacity: 0.8;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .imageB {
+            height: 50%;
+            width: 100%;
+        }
+
+        .imageB img {
+            height: 90%;
+            width: 88%;
+            opacity: 0.9;
+            margin: 22px;
+            border-radius: 4px;
+        }
+
+        .text {
+            height: 40%;
+            width: 100%;
+            text-align: center;
+            padding-top: 18px;
+        }
+
+        .text h2 {
+            font-size: 2em;
+        }
+
+        .text p {
+            font-size: 2em;
+            padding-top: 24px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            height: 4%;
+            width: 28%;
+            margin: 8px;
+            margin-bottom: 10px;
+            border: none;
+            color: white;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,148,195,0.3842787114845938) 100%);
+            opacity: 2;
+            border-radius: 10PX;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="imageB">
+            <img src="02profile.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Deepak Ghimire</h2>
+            <p>IT student having intrest in coding #WebDeveloper</p>
+        </div>
+        <button>Contact</button>
+    </div>
+
+</body>
+
+</html>

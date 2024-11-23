@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events in JS</title>
+</head>
+<body  class="body">
+
+    <!-- Changing a color using buttons -->
+
+    <div class="container">
+        <button class="bgColor">
+            black
+        </button>
+    </div>
+
+    <script>
+        const button = document.querySelector("bgColor");
+        const body = document.querySelector("body")
+            button.addEventListener("click",()=>{
+            if(button.textContent == "black"){
+                body.style.backgroundColor = "black"
+                button.textContent = "white"
+            }
+
+            else{
+                body.style.backgroundColor = "white"
+                 button.textContent = "white"
+            }
+        })
+
+       
+    </script>
+     
+    
+</body>
+</html>
