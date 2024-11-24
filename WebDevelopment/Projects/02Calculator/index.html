@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <style>
+        *{
+            margin: 0px;
+            border: none;
+        }
+        .container{
+            background-color: rgb(213, 206, 206);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        .calc{
+            /* height: 380px; */
+            /* width: 240px; */
+            height: 460px;
+            width: 300px;
+            background-color: white;
+            box-shadow: 1px 0px 20px 0px black;
+            margin: auto;
+            border-radius: 10px;
+            
+        }
+        .row{
+            height: 14%;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+            
+        }
+        .row1{
+            margin-top: 10px;
+        }
+        input{
+            background-color: rgb(106, 129, 211);
+            height: 72%;
+            width: 88%;
+            border-radius: 20px;
+            color: white;
+            font-weight: 900;
+        }
+        input:hover{
+            border: none;
+        }
+        .button{
+            height: 50%;
+            width: 20%;
+            border-radius: 100px;
+            background-color: rgb(232, 229, 229);
+            box-shadow: 0px 1px 2px 0px;
+        }
+        .percentage,.root,.ce{
+            background-color: rgb(252, 251, 251);
+           
+        }
+        .clear{
+            background-color: rgb(86, 85, 85);
+            color: white;
+        }
+        .sub{
+            background-color: red;
+            color: white;
+            font-size: larger;
+        }
+        .devide{
+            background-color: rgba(6, 168, 243, 0.895);
+            color: white;
+            font-size: 1.2em;
+        }
+        .mult{
+            background-color: rgb(227, 227, 12);
+            color: white;
+        }
+        .add{
+            background-color: rgb(9, 222, 9);
+            color: white;
+        }
+        .equal{
+            background-color: rgb(252, 251, 251);
+        }
+        .toggleButton{
+            margin-top: 40px;
+           
+          
+        }
+        .toggleButton button{
+            height: 24px;
+            margin-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="toggleButton">
+            <button type="submit" id="toggleB">Dark Mode</button>
+        </div>
+        <div class="calc">
+            <div class="row row1">
+                <input type="number" disabled id="displayF">
+            </div>
+            <div class="row row2">
+                <button class="button percentage">%</button>
+                <button class="button root">√
+                </button>
+                <button class="button ce">CE</button>
+                <button class="button clear">C</button>
+            </div>
+            <div class="row row3">
+                <button class="button 7">7</button>
+                <button class="button 8">8</button>
+                <button class="button 9">9</button>
+                <button class="button sub">-</button>
+                
+            </div>
+            <div class="row row4">
+                <button class="button 4">4</button>
+                <button class="button 5">5</button>
+                <button class="button 6">6</button>
+                <button class="button devide">÷</button>
+                
+            </div>
+            <div class="row row5">
+                <button class="button 1">1</button>
+                <button class="button 2">2</button>
+                <button class="button 3">3</button>
+                <button class="button mult">x</button>
+                
+            </div>
+            <div class="row row6">
+                <button class="button point">.</button>
+                <button class="button 0">0</button>
+                <button class="button equal">=</button>
+                <button class="button add">+</button>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
