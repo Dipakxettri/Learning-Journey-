@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webiste | Deepak Ghimire</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       
+   .navBar{
+    height: 6vh;
+    width: 100vw;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+   }
+
+   body{
+    
+    /* height: 98vh; */
+    /* width: 100vw; */
+    /* background: linear-gradient(45deg, rgb(0, 255, 98), blue); */
+    background-color: white;
+    overflow-x: hidden;
+   }
+
+   .navBar ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+   }
+
+   .navBar ul li a{
+    text-decoration: none;
+    color: white;
+   }
+
+   .navBar ul li a:hover{
+    color: rgb(4, 95, 200);
+   }
+
+   /* .container .body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, rgb(0, 255, 98), blue);
+    
+   } */
+
+   .navBar h2{
+    color: rgb(53, 53, 255);
+   }
+   .introCard{
+    position: relative;
+    top: 80px;
+    height: 120vh;
+    width: 48%;
+    background-color: rgb(219, 216, 216);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 13px 0px black;
+    z-index: 2;
+
+   }
+
+   .imgB{
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .imgB img{
+    height: 80%;
+    width: 50%;
+    border-radius: 20px;
+   }
+
+   @media screen and (max-width: 500px) {
+
+    .introCard{
+        width: 80%;
+        margin: auto;
+    }
+    .introCard img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+
+.introCard{
+    width: 80%;
+    margin: auto;
+}
+}
+
+.content{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+.row1,.row2,.row3,.row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 1.2em;
+}
+
+.row4{
+    padding-top: 32px;
+}
+
+.sLogoes{
+    height: 28px;
+    padding-left: 8px;
+    padding-top: 24px;
+}
+       
+.row5 p{
+    display: inline-block;
+}
+
+.body2{
+    height: 800px;
+    width: 100vw;
+    border-top: 1px solid black;
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+    /* background-color: rgb(241, 239, 239); */
+}
+
+
+.aboutB{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 30%;
+    width: 100%;
+    top: 200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(241, 239, 239);
+    padding-top: 10px;
+}
+
+.aboutB h3{
+    padding: 40px;
+}
+
+.aboutB p{
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+
+.introP{
+    line-height: 2;
+}
+
+.child{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+.educationB{
+    position: relative;
+    top: 280px;
+    min-height: 100%;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(241, 239, 239);
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navBar">
+            <h1>DEEPAK</h1>
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </div>
+        <div class="body" id="homeSection">
+            <div class="introCard" >
+                <div class="imgB">
+                    <img src="dev3.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="row1">
+                        <p>HI THERE I AM ,</p>
+                    </div>
+                    <div class="row2">
+                        <h2>Deepak Ghimire</h2>
+                    </div>
+                    <div class="row3">
+                        <p><b>An IT Student andenthusiastic programmer.</b></p>
+                    </div>
+                    <div class="row4">
+                        <h2>Social Links </h2>
+                    </div>
+                    <div class="row5">
+                        <a href="https://github.com/Dipakxettri" target="_blank"><img src="github-sign.png" alt="" class="sLogoes" ></a>
+                       <p>GitHub</p>
+                       <a href="#" target="_blank"><img src="linkedin.png" alt="" class="sLogoes"></a>
+                       <p>Linkdin</p>
+                       <a href="#" target="_blank"><img src="facebook.png" alt="" class="sLogoes"></a>
+                       <p>Facebook</p>
+                       <a href="#" target="_blank"><img src="phone-call.png" alt="" class="sLogoes"></a>
+                       <p>Phone</p>
+                    </div>
+                    
+                   
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="body2">
+            <div class="aboutB" id="aboutSection">
+                <h2>About Me</h2>
+                <div class="child aboutC">
+
+                    <div class="aRow1">
+                        <p class="introP">Namasta, This is me Deeak Ghimire an aspiring software developer passonate about crafting solutions of problums I am Currently doing my Bachelor's in BCA from <a href="#">Nepathya College</a> </p>
+                    </div>
+                    <div class="aRow2">
+                        <p>i am currently exploring JS </p>
+                    </div>
+                </div>
+                
+                
+               
+            </div>
+
+            <div class="educationB">
+                <h2>Education</h2>
+                <div class="child educationC">
+
+                    <div class="eRow1">
+                        <p class=""> 2074-2078 : See from shree nepal rastrya tribhuwan sec school</p>
+                        <p>2078-2080 : +2 from Mahakavi Devkota Secondary school</p>
+                        <p>2080-.... : Bachlors from Nepathya Collage</p>
+                    </div>
+                    <!-- <div class="aRow2">
+                       
+                    </div> -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+   
+    
+</body>
+</html>
