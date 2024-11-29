@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Social Media Cards</title>
+
+    <style>
+        body{
+            /* display: flex; */
+            background-color: rgb(230, 220, 220);
+        }
+
+        .mainC{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            /* margin: auto; */
+            height: 480px;
+            width: 320px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+            margin: 20px;
+        
+
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 16%;
+            /* border: 1px solid black; */
+            
+        }
+        .head h2{
+            /* text-align: center; */
+        }
+        .imageB{
+            display: flex;
+            height: 40%;
+            justify-content: center;
+            /* border: 1px solid black; */
+        }
+        .imageB img{
+            height: 100%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .container:hover{
+            background-color: black;
+            color: white;
+            
+        }
+
+        .content{
+            height: 30%;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+
+        @media only screen and (min-width: 700px) {
+    .mainC {
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+        .button{
+            height: 10%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button button{
+            /* background-color: black; */
+            /* color: white; */
+            border: none;
+            height: 50%;
+            width: 40%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mainC">
+
+        <div class="container">
+            <div class="head">
+                <h2>Anime 1</h2>
+            </div>
+            <div class="imageB">
+                <img src="anime9.jpg" alt=""> 
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam, voluptatum laborum velit ullam archi ratione consequuntur adipisci necessitatibus corrupti ullam molestiae aut. Beatae, optio eius.</p>
+            </div>
+    
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="head">
+                <h2>Anime 2</h2>
+            </div>
+            <div class="imageB">
+                <img src="anime2.jpg" alt=""> 
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam, voluptatum laborum velit ullam archi ratione consequuntur adipisci necessitatibus corrupti ullam molestiae aut. Beatae, optio eius.</p>
+            </div>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+            
+        </div>
+    
+        <div class="container">
+            <div class="head">
+                <h2>Anime 3</h2>
+            </div>
+            <div class="imageB">
+                <img src="anime4.jpg" alt=""> 
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam, voluptatum laborum velit ullam archi ratione consequuntur adipisci necessitatibus corrupti ullam molestiae aut. Beatae, optio eius.</p>
+            </div>
+    
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="head">
+                <h2>Anime 4</h2>
+            </div>
+            <div class="imageB">
+                <img src="anime5.jpg" alt=""> 
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam, voluptatum laborum velit ullam archi ratione consequuntur adipisci necessitatibus corrupti ullam molestiae aut. Beatae, optio eius.</p>
+            </div>
+    
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+
+    </div>
+
+   
+    
+</body>
+</html>
