@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website | Deepak Ghimire</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: rgb(235, 229, 229);
+            display: flex;
+            height: 100vh;
+            width: 90vw;
+        }
+
+        .container{
+           
+        }
+
+        
+
+        .navBar{
+            height: 6vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            position: fixed;
+            z-index: 2;
+            
+        }
+
+        .navBar h3{
+            color: rgb(65, 65, 234);
+        }
+        .logo{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav,ul{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nav ul li a{
+            color: white;
+        }
+
+        .introBox{
+
+            align-self: center;
+            justify-self: center;
+            height: 760px;
+            width: 38vw;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 6px 2px 4px black;
+        }
+
+        @media only screen and (max-width: 700px){
+            .introBox {
+        margin: auto;
+        justify-content: center;
+        width: 100vw;}
+    }
+
+    .imgB{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introText{
+        height: 20%;
+        width: 80%;
+        margin: auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contacts{
+        height: 10%;
+        width: 80%;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navBar">
+            <div class="logo">
+                <h3>DEEPAK</h3>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Service</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+       
+
+            <div class="introBox">
+                <div class="imgB">
+                    <img src="dev3.png" alt="" height="80%">
+                </div>
+                <div class="introText">
+                    <div class="para1">
+                        <p>hello there I Am</p>
+                    </div>
+                    <div class="name">
+                        <h3>DEEPAK GHIMIRE</h3>
+                    </div>
+                    <div class="para2">
+                        <p><b>An IT Student</b></p>
+                    </div>
+                    <div class="para3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo lt assumenda, et quisquam!</p>
+                    </div>
+                    
+                </div>
+                <div class="contacts">
+                    <div class="phoneNo">
+                        <span>9821495049</span>
+                    </div>
+                    <div class="email">
+                        <span>codeepakghimire@gmail.com</span>
+                    </div>
+                </div>
+            
+        
+    </div>
+    </div>
+
+    
+</body>
+</html>
