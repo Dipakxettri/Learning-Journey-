@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Inserting And Removing Elements</title>
+
+    <style>
+        .button{
+            border: none;
+            border-radius: 20px;
+            height: 40px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="button1 button">Add</button>
+        <button class="button2 button">Remove</button>
+        <button class="button3 button">Clear</button>
+    </div>
+
+    <script>
+        const button1 = document.querySelector(".button1");
+        const button2 = document.querySelector(".button2");
+        const button3 = document.querySelector(".button3");
+
+        button1.addEventListener("click", ()=>{
+            const div = document.createElement("h2");
+            div.setAttribute("class","box");
+            div.innerHTML = "Addded";
+            div.style.backgroundColor = "gray";
+            div.style.color = "blue";
+            div.style.textAlign = "center";
+            document.querySelector(".container").append(div);
+        })
+
+        button2.addEventListener("click", ()=>{
+            document.querySelector(".box").remove();
+        })
+
+        button3.addEventListener("click", ()=>{
+            document.querySelectorAll(".box").forEach((di) => {
+                di.remove();
+            });
+
+        })
+
+    </script>
+    
+</body>
+</html>

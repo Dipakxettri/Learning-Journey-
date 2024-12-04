@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Feild</title>
+
+    <style>
+        .container{
+            margin: auto;
+            margin-top: 16px;
+            height: 40vh;
+            width: 70vw;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="number" class="input1" placeholder="Enter 1st number">
+        <input type="number" class="input2" placeholder="Enter 2nd number">
+        <button class="button1">*</button>
+        <button class="button2">clear</button>
+        <p class="result">Result : </p>
+
+
+
+    </div>
+
+    <script>
+        const v1 = document.querySelector(".input1");
+        const v2 = document.querySelector(".input2");
+        const button1 = document.querySelector(".button1");
+        const button2 = document.querySelector(".button2");
+
+        const result = document.querySelector(".result");
+
+        let resultV = 0;
+
+        button1.addEventListener("click", ()=>{
+            const value1 = parseFloat(v1.value);
+            const value2 = parseFloat(v2.value);
+
+            resultV = value1 * value2;
+        
+            // result.innerHTML = `Result ${resultV}`;
+
+            if(!isNaN(value1) & (!isNaN(value2))){
+                result.innerHTML = `Result ${resultV}`;
+            }
+
+            else{
+                let = error = "Should be entered an number";
+                result.innerHTML = "Result : Should be entered an number";
+            }
+
+        })
+
+        button2.addEventListener("click",()=>{
+            v1.value = "  ";
+            v2.value = "  ";
+            result.innerHTML = "Result : "
+        })
+
+
+    </script>
+    
+</body>
+</html>
