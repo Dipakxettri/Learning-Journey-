@@ -1,5 +1,6 @@
-# Learning-Journey- in web development 
-Documenting my journey through web development like FrontEnd, Backend And Database.
+# Learning-Journey- in web Design
+
+Documenting my journey through web Design like HTML,CSS and more!
 
 ## Javascript:
 
